@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: #f3eae3;
+    }
+    .artikel{
+      width: 40vmax;         
+      height: 50vmin;        
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+      font-size: 2vmin;
+      position: relative;
+      top: 15rem;
+      border-radius: 5%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    .img {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      left: 0rem;
+      border-top-left-radius:5% ;
+      border-bottom-left-radius: 5%;
+    }
+    .info{
+      margin-top: 4rem;
+      padding: 1rem;
+      width: 50%;
+      height: 100%;
+      position: relative;
+      right: 0rem;
+      text-align: center;
+    }
+    .title{
+      font-size: 3rem;
+      margin-top: 1em;
+      margin-bottom: 2rem;
+    }
+    .text{
+      padding-left: 2rem;
+      margin-bottom: 3rem;
+    }
+    .preis{
+      color: green;
+      position: relative;
+      right: 1rem;
+      font-size: 2.5rem;
+
+    }
+    .oldpreis{
+      position: relative;
+      font-size: 1.5rem;
+
+    }
+    .btn{
+      position: relative;
+      top: 5rem;
+      width: 20rem;
+      height: 3rem;
+      background-color: green;
+      border-radius: 2rem;
+      border: none;
+      color: white;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="artikel">
+    <img class="img" src="images/image-product-desktop.jpg" alt="Product image" >
+    <div class="info">
+      <h4>Perfume</h4>
+      <p class="title"> <b>Gabrielle Essence Eau De Parfum</b></p>
+
+      <p class="text">  A floral, solar and voluptuous interpretation composed by Olivi Polge, Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <span class="preis"><b>$149.99</b></span>
+      <span class="oldpreis"><del>$169.99</del> </span>
+      
+      <button class="btn">
+        Add to Cart
+        <img src="images/icon-cart.svg" alt="">
+      </button>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
